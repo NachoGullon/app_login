@@ -1,0 +1,11 @@
+.container{
+    display: flex; width: 100%;cursor: pointer;
+}
+
+.itemMenu{
+    width:25% ;border: 1px solid; text-align: center;height: 40px;padding: 20px; background-color: black;color: white;
+}
+
+.itemMenu:hover{
+    background-color: gray; color: black;
+}

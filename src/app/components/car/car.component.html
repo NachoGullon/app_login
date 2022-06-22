@@ -1,0 +1,30 @@
+<div>
+    <h2>Añadir Coche</h2>
+    <div>
+        <form [formGroup]="loginForm"> 
+            <h1>Login</h1>
+            <mat-form-field class="w-80" appearance="fill">
+                <mat-label>Modelo</mat-label>
+                <mat-icon matPrefix>person</mat-icon>
+                <input formControlName="modelo" type="text" matInput>
+              </mat-form-field>
+
+              <mat-form-field class="w-80" appearance="fill">
+                <mat-label>Precio</mat-label>
+                <mat-icon matPrefix>lock</mat-icon>
+                <input formControlName="precio" type="number" matInput>
+              </mat-form-field>
+              <mat-form-field class="w-80" appearance="fill">
+                <mat-label>Color</mat-label>
+                <mat-icon matPrefix>lock</mat-icon>
+                <input formControlName="color" type="text" matInput>
+              </mat-form-field>
+
+              <button [disabled]="!loginForm.valid" (click)="doLogin()" class="btnRadius w-80" mat-raised-button mat-button color="primary">Acceder</button>
+
+
+        </form>
+                   
+    </div>
+
+</div>

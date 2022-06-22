@@ -1,0 +1,31 @@
+<div class="background">
+    <div class="body">
+        <div class="login">
+            <form [formGroup]="registerForm"> 
+                <h1>Register</h1>
+                <mat-form-field class="w-80" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <mat-icon matPrefix>person</mat-icon>
+                    <input formControlName="email" type="email" matInput>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-80" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <mat-icon matPrefix>lock</mat-icon>
+                    <input formControlName="password" type="password" matInput>
+                  </mat-form-field>
+
+                  <mat-form-field class="w-80" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <mat-icon matPrefix>lock</mat-icon>
+                    <input formControlName="passwordRepeat" type="password" matInput>
+                  </mat-form-field>
+
+                  <button [disabled]="!registerForm.valid" (click)="doRegister()" class="btnRadius w-80" mat-raised-button mat-button color="primary">Registrarse</button>
+
+
+            </form>
+        </div>
+    </div>
+
+</div>
